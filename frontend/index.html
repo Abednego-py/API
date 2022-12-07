@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Netflix" description="">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Gomycode</title>
+
+    <style>
+        li {
+            display: inline;
+        }
+        header {
+            border : 1px solid black;
+        }
+        #form {
+            height: 40px;
+        }
+        .btn {
+            display: inline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- This is the header-->
+    <header>
+        <h2 style="color:red"><a href=''>GoMycode</a></h2>
+     
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contactUs.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <form action="http://127.0.0.1:5000/search" method="get" id="form">
+            <input type="text" name="search" id="">
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <!--- This is the main-->
+    <section>
+        <main>
+        <div>
+            <figure>
+                <img src="images/color.jpeg" alt="color">
+                <figcaption><i>Image of man drawing himself</i></figcaption>
+            </figure>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Unde, quidem animi! Debitis 
+                sint qui quibusdam. Dolore ullam illum perferendis 
+                libero quasi, nemo eum, eaque aspernatur obcaecati at accusantium ducimus. Rerum.
+            </p>
+        </div>
+      <br>
+
+        <div>
+            <figure>
+                <img src="images/google_image.jpeg" alt="">
+                <figcaption><b><i>Image of Google</i></b></figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic nesciunt recusandae dolore neque ut reprehenderit ratione, itaque qui deleniti, dignissimos vero aspernatur? Odit, 
+                omnis nemo! Repudiandae ex eligendi soluta mollitia.</p>
+        </div>
+
+        <table>
+            <thead>
+            <tr>
+                <th>
+                    Title
+                </th>
+               <th>
+                Position
+               </th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>First</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Second</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Third
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </main>
+
+        <aside>
+        <form action="http://127.0.0.1:5000/home" method="post">
+
+            <label for="Firstname">Firstname : 
+            <input type="text" name="Firstname" id=""></label>
+            <label for="Lastname">Lastname : 
+            <input type="text" name="Lastname" id=""></label>
+            <label for="Email">Email :
+            <input type="email" name="Email" id="input_email"></label>
+            <button type="submit">Submit</button>
+        </form>    
+        </aside>
+    </section>
+
+
+    <section>
+
+        <form action="http://127.0.0.1:5000/predict" method="post">
+
+            <header>Autos Price Prediction</header>
+            <label for="volume">
+                <input type="number" name="volume">
+            </label>
+            <label for="power">
+                <input type="number" name="power">
+            </label>
+            <label for="weight">
+                <input type="number" name="weight">
+            </label>
+            <label for="console">
+                <input type="number" name="console">
+            </label>
+
+            <button type="submit">
+                Predict
+            </button>
+        </form>
+    
+    </section>
+</body>
+</html>
